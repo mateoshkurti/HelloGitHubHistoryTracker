@@ -2,7 +2,7 @@
 
 REPO_DIR="/Users/mateoshkurti/Documents/GIT/Personal/Git-Automate/green-graph"
 QUOTE_FILE="$REPO_DIR/quotes.txt"
-TARGET_FILE="$REPO_DIR/activity.txt"
+TARGET_FILE="$REPO_DIR/UpdateMe.txt"
 LOG_FILE="$REPO_DIR/push_log.txt"
 
 # Infinite loop for scheduled pushes
@@ -17,7 +17,7 @@ do
 
         # Git commit and push
         cd "$REPO_DIR"
-        git add .
+        git add UpdateMe.txt
         git commit -m "✨ auto update: $QUOTE"
         git push origin main
 
